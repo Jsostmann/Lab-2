@@ -25,12 +25,18 @@ public class PlayerStats {
        
        readData("playerData2.txt",playerNames,playerScores);
        printData(playerNames,playerScores);
+       
         System.out.println(" ");
+        
        sortNamesAndScores(playerNames,playerScores);
        printData(playerNames,playerScores); 
+       
         System.out.println(" ");
+        
        printTopNPlayers(3,playerNames,playerScores);
+       
         System.out.println(" ");
+        
        printTopNPlayers(10,playerNames,playerScores);
 
         
@@ -115,7 +121,9 @@ public class PlayerStats {
         
     }
     public static void printTopNPlayers(int n, String[] names, int[] scores) {
-        
+       
+        sortNamesAndScores(names,scores);
+
         for(int i = 0; i < n; i++) {
             
             System.out.print(names[i] + " " + scores[i] + "\n");
