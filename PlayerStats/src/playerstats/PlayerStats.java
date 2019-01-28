@@ -57,7 +57,7 @@ public class PlayerStats {
         
         } catch(FileNotFoundException ex){
              
-          System.err.println("could not open the file for writing.");
+          System.err.println("could not find the file for reading.");
           System.exit(-1);
         }
     
